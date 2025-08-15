@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блоки в Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .block-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .block-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .block-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .block-card h3 {
+            color: #4CAF50;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .block-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            width: 30px;
+            text-align: center;
+        }
+        
+        .block-property {
+            display: flex;
+            margin: 8px 0;
+        }
+        
+        .property-name {
+            font-weight: bold;
+            width: 100px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Блоки в Minecraft</h1>
+            <p>Все основные блоки и их особенности</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="block-grid">
+            <div class="block-card">
+                <h3><i class="fas fa-tree block-icon"></i> Трава</h3>
+                <p>Основной блок поверхности в большинстве биомов. При разрушении выпадает земля.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>0.6</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Лопата</span>
+                </div>
+            </div>
+            
+            <div class="block-card">
+                <h3><i class="fas fa-mountain block-icon"></i> Камень</h3>
+                <p>Один из самых распространённых блоков в игре. При добыче киркой выпадает булыжник.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>1.5</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Кирка</span>
+                </div>
+            </div>
+            
+            <div class="block-card">
+                <h3><i class="fas fa-cubes block-icon"></i> Дубовые доски</h3>
+                <p>Создаётся из древесины дуба. Используется для строительства и крафта.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>2.0</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Любой</span>
+                </div>
+            </div>
+            
+            <div class="block-card">
+                <h3><i class="fas fa-wine-glass block-icon"></i> Стекло</h3>
+                <p>Прозрачный блок, создаваемый из песка в печи. Разбивается без инструментов.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>0.3</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Любой</span>
+                </div>
+            </div>
+            
+            <div class="block-card">
+                <h3><i class="fas fa-gem block-icon"></i> Алмазный блок</h3>
+                <p>Декоративный блок, создаётся из 9 алмазов. Символизирует богатство.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>5.0</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Кирка</span>
+                </div>
+            </div>
+            
+            <div class="block-card">
+                <h3><i class="fas fa-tint block-icon"></i> Вода</h3>
+                <p>Прозрачная текучая субстанция. Распространяется на 7 блоков от источника.</p>
+                <div class="block-property">
+                    <span class="property-name">Прочность:</span>
+                    <span>Неразрушаемый</span>
+                </div>
+                <div class="block-property">
+                    <span class="property-name">Инструмент:</span>
+                    <span>Ведро</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Minecraft Блоки | Неофициальный сайт</p>
+        </div>
+    </footer>
+</body>
+</html>
